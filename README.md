@@ -75,3 +75,74 @@ Learn more about the power of Turborepo:
 - [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
 - [Configuration Options](https://turborepo.org/docs/reference/configuration)
 - [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+
+## Blog post
+
+```s
+$ npx create-turbo@latest
+# Follow prompts and select yarn for package manager
+$ yarn run dev
+# Runs the developer environment
+```
+
+### Adding a Heading component
+
+Within `packages/ui/Heading.tsx`:
+
+```tsx
+import * as React from "react";
+
+interface HeadingProps {
+  children: React.ReactNode;
+}
+
+export function Heading({ children }: HeadingProps) {
+  return <h1>{children}</h1>;
+}
+```
+
+Within `packages/ui/index.tsx`:
+
+```tsx
+import * as React from "react";
+export * from "./Button";
+export * from "./Heading";
+```
+
+Out-of-the-box, both `apps` that we have will have support to already support the capability of using the `Heading` component from the `ui` library without issue.
+
+Within `apps/web/pages/index.tsx`:
+
+```tsx
+import { Button, Heading } from "ui";
+
+export default function Web() {
+  return (
+    <div>
+      <Heading>Web updated</Heading>
+      <Button />
+    </div>
+  );
+}
+```
+
+Within `apps/docs/pages/index.tsx`:
+
+```tsx
+import { Button, Heading } from "ui";
+
+export default function Docs() {
+  return (
+    <div>
+      <Heading>Docs updated</Heading>
+      <Button />
+    </div>
+  );
+}
+```
+
+Happy days! Next step will be looking at the ability to handle deployments.
+
+### More useful links from playing around
+
+- [Vercel Monorepos](https://vercel.com/docs/concepts/git/monorepos)

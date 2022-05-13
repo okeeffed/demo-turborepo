@@ -1,9 +1,9 @@
-import { Button } from "ui";
+import { Button, Heading } from "ui";
 
 export default function Web() {
   return (
     <div>
-      <h1>Web</h1>
+      <Heading>Web updated</Heading>
       <Button />
     </div>
   );
