@@ -1,9 +1,11 @@
 name: Demo CLI Node.js Package
 on:
-  pull_request:
-    types: [closed]
-    paths:
-      - "libs/demo-turborepo-cli-github-pkg"
+  push:
+    branches:
+      - main
+  # pull_request:
+  #   types:
+  #     - closed
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,13 +33,13 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - run: yarn install --immutable
+      - run: "yarn workspace @okeeffed/demo-turborepo-cli-github-pkg install --immutable"
         env:
           # Specify custom .npmrc because actions/setup-node@v1 doesn't
           # correctly set registry-url and token at Windows platform
           NPM_CONFIG_USERCONFIG: .npmrc.ci
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: yarn build
-      - run: yarn publish
+      - run: "yarn workspace @okeeffed/demo-turborepo-cli-github-pkg run build"
+      - run: "yarn workspace @okeeffed/demo-turborepo-cli-github-pkg run publish"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
