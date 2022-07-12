@@ -2,7 +2,6 @@ name: Demo CLI Node.js Package
 on:
   pull_request:
     types: [closed]
-    branches: ["main"]
     paths:
       - "libs/demo-turborepo-cli-github-pkg"
 jobs:
