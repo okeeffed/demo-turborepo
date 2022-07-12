@@ -47,12 +47,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/okeeffed/@okeeffed/demo-turborepo-cli-github-pkg.git"
+    "url": "git+https://github.com/okeeffed/demo-turborepo.git"
   },
   "bugs": {
-    "url": "https://github.com/okeeffed/@okeeffed/demo-turborepo-cli-github-pkg/issues"
+    "url": "https://github.com/okeeffed/demo-turborepo/issues"
   },
-  "homepage": "https://github.com/okeeffed/@okeeffed/demo-turborepo-cli-github-pkg#readme",
+  "homepage": "https://github.com/okeeffed/demo-turborepo#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }
