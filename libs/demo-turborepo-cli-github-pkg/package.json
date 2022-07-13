@@ -11,7 +11,7 @@
     "prestart": "node -r @swc-node/register scripts/exportAllCommands.ts",
     "start": "node -r @swc-node/register src/index.ts",
     "release": "standard-version",
-    "deploy": "npm uninstall -g . && npm i -g . && asdf reshim nodejs && testing-library --help",
+    "deploy": "npm uninstall -g . && npm i -g . && testing-library --help",
     "test": "jest --passWithNoTests",
     "setup": "node -r @swc-node/register scripts/setup.ts",
     "lint:fix": "eslint --fix"

@@ -1,11 +1,11 @@
 name: Demo CLI Node.js Package
 on:
-  push:
-    branches:
-      - main
-  # pull_request:
-  #   types:
-  #     - closed
+  # push:
+  #   branches:
+  #     - main
+  pull_request:
+    types:
+      - closed
 jobs:
   build:
     runs-on: ubuntu-latest
