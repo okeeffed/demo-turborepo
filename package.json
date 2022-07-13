@@ -11,6 +11,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "deploy:local": "tubro run deploy --filter=./libs/*",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
