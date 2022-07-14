@@ -14,7 +14,8 @@
       "dependsOn": ["^build"]
     },
     "release": {
-      "outputs": []
+      "outputs": [],
+      "cache": false
     }
   }
 }
