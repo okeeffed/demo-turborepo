@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.15 (2022-07-14)
+
+
+### Features
+
+* add in Husky, Lint Staged + Commitlint ([89c3ef7](https://github.com/okeeffed/demo-turborepo/commit/89c3ef7d9a347024aa337ae4c2c5668986196e99))
+* add in kodiak toml file ([5533509](https://github.com/okeeffed/demo-turborepo/commit/553350964a4a67b033fcdf40fcb5b2a4ea9cd6ba))
+* attempt to run GitHub action to deploy cli packages ([6444437](https://github.com/okeeffed/demo-turborepo/commit/6444437b15b8fe4b0d7c055130729dc4d6522ad3))
+* update ui with <Heading /> component ([167d53b](https://github.com/okeeffed/demo-turborepo/commit/167d53b3f173c32df40dd133bc7ac37604710773))
+
+
+### Bug Fixes
+
+* push -> PR closed ([eea0d7c](https://github.com/okeeffed/demo-turborepo/commit/eea0d7c63cc17dcb5a677a176911ddabc3b7db63))
+* remove branches requirement ([887a875](https://github.com/okeeffed/demo-turborepo/commit/887a875a3a10e715ab6333b3a6784b0b4e5ab06e))
+* repo info in package.json ([0e218be](https://github.com/okeeffed/demo-turborepo/commit/0e218bef3195718fcabc13e57b7f932884382a5d))
+* turbo.json + action changes ([36a9d92](https://github.com/okeeffed/demo-turborepo/commit/36a9d92dd15b8a4f65e224c4dfcb21c77824b2e3))
+
 ### [0.1.11](http://github.com///compare/v0.1.10...v0.1.11) (2021-05-30)
 
 
