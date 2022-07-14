@@ -4,6 +4,12 @@ This has been updated to also test out Kodiak and deployments for GitHub package
 
 This also uses Yarn v1 as a demo and deploys to Vercel.
 
+## Commands
+
+| Command        | Does              |
+| -------------- | ----------------- |
+| `yarn release` | Bump CLI versions |
+
 ## What's inside?
 
 This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
