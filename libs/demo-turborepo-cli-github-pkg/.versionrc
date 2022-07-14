@@ -9,6 +9,14 @@
       "section": "Bug Fixes"
     },
     {
+      "type": "docs",
+      "section": "Documentation"
+    },
+    {
+      "type": "chore",
+      "section": "Chores"
+    },
+    {
       "type": "test",
       "section": "Tests",
       "hidden": true
@@ -22,6 +30,5 @@
       "type": "ci",
       "hidden": true
     }
-  ],
-	"path"
+  ]
 }
