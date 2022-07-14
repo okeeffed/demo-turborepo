@@ -1,6 +1,6 @@
 {
   "name": "@okeeffed/test-two",
-  "version": "0.1.30",
+  "version": "0.1.31",
   "main": "lib/index.js",
   "bin": {
     "test-two": "lib/index.js"
