@@ -1,4 +1,4 @@
-name: Demo CLI Node.js Package
+name: Release test-two package
 on:
   pull_request:
     types:

@@ -1,4 +1,4 @@
-name: Demo CLI Node.js Package
+name: Release test-one package
 on:
   pull_request:
     types:
@@ -30,13 +30,13 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - run: "yarn workspace @okeeffed/demo-turborepo-cli-github-pkg install --immutable"
+      - run: "yarn workspace @okeeffed/test-one install --immutable"
         env:
           # Specify custom .npmrc because actions/setup-node@v1 doesn't
           # correctly set registry-url and token at Windows platform
           NPM_CONFIG_USERCONFIG: .npmrc.ci
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "yarn workspace @okeeffed/demo-turborepo-cli-github-pkg run build"
+      - run: "yarn workspace @okeeffed/test-one run build"
       - run: "npm publish --patch -w=libs/demo-turborepo-cli-github-pkg"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
