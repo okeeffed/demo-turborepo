@@ -1,0 +1,5 @@
+{
+  "name": "pkg-ts-commander-cli-run",
+  "version": "0.1.1",
+  "fallback_path": "src/commands"
+}

@@ -1,0 +1,27 @@
+{
+  "version": "0.0.1",
+  "dependencies": {
+    "type": {
+      "pkg": "current"
+    },
+    "ts-commander-cli": {
+      "hello": "^0.0.1",
+      "run": "^0.1.0"
+    },
+    "ts-controllers": {
+      "fs-utils": "^0.0.1"
+    },
+    "github-config": {
+      "npm-publish-github-package": "^0.3.0"
+    }
+  },
+  "storage": {
+    "ts-commander-cli": "src/commands",
+    "ts-controllers": "src/controllers",
+    "github-config": ".github",
+    "eslint-files": ".",
+    "tsconfig-files": ".",
+    "jest-files": ".",
+    "npm-files": "."
+  }
+}

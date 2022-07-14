@@ -1,9 +1,9 @@
 {
-  "name": "@okeeffed/test-one",
+  "name": "@okeeffed/test-two",
   "version": "0.1.30",
   "main": "lib/index.js",
   "bin": {
-    "test-one": "lib/index.js"
+    "test-two": "lib/index.js"
   },
   "license": "MIT",
   "scripts": {

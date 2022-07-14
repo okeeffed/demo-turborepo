@@ -12,6 +12,10 @@
     },
     "deploy": {
       "dependsOn": ["^build"]
+    },
+    "release": {
+      "outputs": [],
+      "cache": false
     }
   }
 }
