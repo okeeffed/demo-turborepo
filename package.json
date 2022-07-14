@@ -1,6 +1,6 @@
 {
   "name": "turborepo-basic-shared",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -11,6 +11,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "release": "turbo run release --filter=./libs/*",
     "deploy:local": "tubro run deploy --filter=./libs/*",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install"
