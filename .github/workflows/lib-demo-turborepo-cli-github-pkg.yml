@@ -1,8 +1,5 @@
 name: Demo CLI Node.js Package
 on:
-  # push:
-  #   branches:
-  #     - main
   pull_request:
     types:
       - closed
