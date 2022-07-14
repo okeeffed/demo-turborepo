@@ -1,6 +1,6 @@
 {
   "name": "@okeeffed/demo-turborepo-cli-github-pkg",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "main": "lib/index.js",
   "bin": {
     "testing-library": "lib/index.js"
@@ -10,7 +10,7 @@
     "build": "tsc -p tsconfig.build.json",
     "prestart": "node -r @swc-node/register scripts/exportAllCommands.ts",
     "start": "node -r @swc-node/register src/index.ts",
-    "release": "npx standard-version --path=libs/demo-turborepo-cli-github-pkg",
+    "release": "npx standard-version --path=.",
     "deploy": "npm uninstall -g . && npm i -g . && testing-library --help",
     "test": "jest --passWithNoTests",
     "setup": "node -r @swc-node/register scripts/setup.ts",
