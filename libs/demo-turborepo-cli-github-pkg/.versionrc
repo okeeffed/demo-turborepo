@@ -1,3 +1,7 @@
 {
-  "changelog": false
+  "skip": {
+    "changelog": true,
+    "commit": true,
+    "tag": true
+  }
 }
