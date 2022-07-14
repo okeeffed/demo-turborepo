@@ -1,7 +1,5 @@
 # CLI Template Starter
 
-Test.
-
 ## Getting started
 
 1. Change `nodejs-cli-template` to the name of the CLI.
