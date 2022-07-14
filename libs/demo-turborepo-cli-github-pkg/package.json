@@ -1,6 +1,6 @@
 {
   "name": "@okeeffed/demo-turborepo-cli-github-pkg",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "main": "lib/index.js",
   "bin": {
     "testing-library": "lib/index.js"
