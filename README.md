@@ -2,8 +2,6 @@
 
 This has been updated to also test out Kodiak and deployments for GitHub packages.
 
-This also uses Yarn v1 as a demo and deploys to Vercel.
-
 ## Commands
 
 | Command        | Does              |
